@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <h1>Criar Novo Prato</h1>
+ <form name="frmNovo" action="insert">
+	 	Codigo: <input type="number" name="Codigo" required><br>
+        Nome: <input type="text" name="Nome" required><br>
+        Ingredientes: <input type="text" name="Ingredientes" required><br>
+        Tipo:
+        <select name="Tipo" required>
+            <option value="entrada">Entrada</option>
+            <option value="principal">Principal</option>
+            <option value="sobremesa">Sobremesa</option>
+        </select><br>
+        <input type="submit" value="Inserir Prato" action="insert" onclick="validar()">
+    </form>
+ </form>
+ <script src="scripts/validador.js"></script>
+</body>
+</html>
